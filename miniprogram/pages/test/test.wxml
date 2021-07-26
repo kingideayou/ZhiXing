@@ -1,0 +1,6 @@
+<!--miniprogram/pages/test/test.wxml-->
+<block>
+  <text>miniprogram/pages/test/test.wxml</text>
+  <text>其他页面</text>
+</block>
+

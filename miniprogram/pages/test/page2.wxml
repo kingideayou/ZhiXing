@@ -1,0 +1,18 @@
+<view class="root">
+  <!-- <image class="head-img" mode="aspectFit" src="../../img/18.png"></image> -->
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 1. 连续收缩 PC 肌30次，要做到位 </text>
+    <text class="content"> 2. 完成后休息1分钟 </text>
+    <text class="content"> 3. 做5组 </text>
+  </view>
+
+  <text class="title"> 动作目的 </text>
+  <text class="content"> 你的PC肌力量已经有所改善，我们可以来点儿更难的了。 </text>
+
+  <text class="title"> 注意事项 </text>
+  <text class="content"> · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。 </text>
+ 
+</view>

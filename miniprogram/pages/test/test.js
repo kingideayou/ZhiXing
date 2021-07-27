@@ -62,18 +62,18 @@ Page({
         theme: "woman"
     });
 
-    wx.setNavigationBarColor({
-      backgroundColor: '#f9c813',
-      frontColor: '#000000',
-    })
+    // wx.setNavigationBarColor({
+    //   backgroundColor: '#f9c813',
+    //   frontColor: '#000000',
+    // })
 
-    wx.setTabBarStyle({
-      backgroundColor: '#f9c813',
-    })
+    // wx.setTabBarStyle({
+    //   backgroundColor: '#f9c813',
+    // })
 
-    wx.setBackgroundColor({
-      backgroundColor: '#333333',
-    })
+    // wx.setBackgroundColor({
+    //   backgroundColor: '#333333',
+    // })
 
     var html = `
     <body>

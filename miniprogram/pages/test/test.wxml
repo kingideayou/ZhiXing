@@ -1,6 +1,28 @@
-<!--miniprogram/pages/test/test.wxml-->
-<block>
-  <text>miniprogram/pages/test/test.wxml</text>
-  <text>其他页面</text>
-</block>
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../img/18.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
+  <view class="content-section-{{theme}}">
+    <text class="title"> 标题 </text>
+    <text class="content"> 内容一 </text>
+    <text class="content"> 内容二 </text>
+    <text class="content"> 内容三 </text>
+  </view>
+
+  <text class="title"> 标题 </text>
+  <text class="content"> 内容一 </text>
+  <text class="content"> 内容二 </text>
+  <text class="content"> 内容三 </text>
+
+  <text class="title"> 标题 </text>
+  <text class="content"> 内容一 </text>
+  <text class="content"> 内容二 </text>
+  <text class="content"> 内容三 </text>
+
+  <text class="title"> 标题 </text>
+  <text class="content"> 内容一 </text>
+  <text class="content"> 内容二 </text>
+  <text class="content"> 内容三 </text>
+
+ 
+</view>

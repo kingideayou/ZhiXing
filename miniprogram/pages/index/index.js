@@ -1,5 +1,6 @@
 "use strict";
 var app = getApp();
+
 Page({
     data: {
         motto: 'Hello World ~',

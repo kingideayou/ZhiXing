@@ -1,13 +1,13 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/test/test",
     "pages/logs/logs",
-    "pages/test/test"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "zhixing",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -15,7 +15,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/test/test",
         "text": "首页"
       },
       {

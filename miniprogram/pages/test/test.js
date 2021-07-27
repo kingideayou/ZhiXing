@@ -47,17 +47,6 @@ Page({
   onLoad: function (options) {
     var that = this;
 
-
-    // var fileManager = wx.getFileSystemManager();          
-    // // ok
-    // let gameJson = fileManager.readFileSync("/miniprogram/pages/test/test.json", "utf-8");
-    // console.log('[json]', gameJson);
-
-    // wx.setNavigationBarColor({
-    //     backgroundColor: '#ffffff',
-    //     frontColor: '#eeeeee',
-    // });
-
     this.setData({
         theme: "woman"
     });

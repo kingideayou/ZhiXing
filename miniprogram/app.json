@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/test/page2",
     "pages/test/test",
+    "pages/test/page2",
     "pages/logs/logs",
     "pages/index/index"
   ],
@@ -16,7 +16,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/test/page2",
+        "pagePath": "pages/test/test",
         "text": "首页"
       },
       {

@@ -15,7 +15,7 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c2fb73;
+  background-color: #FFDE03;
   box-sizing: border-box;
 }
 

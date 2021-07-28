@@ -1,3 +1,5 @@
+import data from '/data.js'﻿
+
 "use strict";
 App({
     globalData: {},
@@ -15,37 +17,39 @@ App({
             }
         });
 
-    var date = new Date();
-    var dateStr = date.toLocaleDateString()
-    console.log("日期：" + dateStr)
-    var hour = date.getHours();
-    console.log("小时：" + hour)
+        console.log("00000000000000 ---> " + data.titles)
 
-    if (hour > 20) {
-        console.log("晚上")
-    } else {
-        console.log("日间")
-    }
+        var date = new Date();
+        var dateStr = date.toLocaleDateString()
+        console.log("日期：" + dateStr)
+        var hour = date.getHours();
+        console.log("小时：" + hour)
 
-    var value = 0;
-    var lastStartDay = 0;
-    try {
-        value = wx.getStorageSync('days')
-        lastStartDay = wx.getStorageSync('lastStartDay')
-        console.log("value :" + value)
-        console.log("lastStartDay :" + lastStartDay)
-    } catch (e) {
-    }
-      
-    try {
-        if (lastStartDay != dateStr) {
-            wx.setStorageSync('days', parseInt(value, 10) + 1)
-            wx.setStorageSync('lastStartDay', dateStr)
+        if (hour > 20) {
+            console.log("晚上")
         } else {
-            console.log("同一天启动")
+            console.log("日间")
         }
-    } catch (e) {
-    }
+
+        var value = 0;
+        var lastStartDay = 0;
+        try {
+            value = wx.getStorageSync('days')
+            lastStartDay = wx.getStorageSync('lastStartDay')
+            console.log("value :" + value)
+            console.log("lastStartDay :" + lastStartDay)
+        } catch (e) {
+        }
+        
+        try {
+            if (lastStartDay != dateStr) {
+                wx.setStorageSync('days', parseInt(value, 10) + 1)
+                wx.setStorageSync('lastStartDay', dateStr)
+            } else {
+                console.log("同一天启动")
+            }
+        } catch (e) {
+        }
 
 
         // wx.setNavigationBarColor({

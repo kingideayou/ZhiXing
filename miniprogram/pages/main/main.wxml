@@ -7,8 +7,8 @@
   </view>
   
   <view class="main-container-tips">
-    <text class="main-title"> 互相分享特长 </text>
-    <text class="main-content"> 人皆好为人师，你教她，她教你，感情就培养出来啦，想想杨过和小龙女吧。。 </text>
+    <text class="main-title">{{title}}</text>
+    <text class="main-content">{{content}}</text>
   </view>
 
 </view>

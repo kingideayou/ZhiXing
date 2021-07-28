@@ -1,18 +1,24 @@
 // miniprogram/pages/index/main.js
+import tipsData from '../../data.js';
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    title: "",
+    content: ""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+        title: tipsData.titles[0],
+        content: tipsData.contents[0]
+    })
   },
 
   /**
@@ -66,6 +72,12 @@ Page({
 
   jumpToPage: function (e) {
     var urlStr = "/pages/page2/page2"
+    var curDays = wx.getStorageSync('days')
+    if (curDays % 2 == 0) {
+      urlStr = "/pages/page2/page2"
+    } else {
+      urlStr = "/pages/test/test"
+    }
     wx.navigateTo({
         url: urlStr,
         events: {

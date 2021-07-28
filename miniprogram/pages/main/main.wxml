@@ -1,0 +1,15 @@
+<!--miniprogram/pages/index/main.wxml-->
+<view class="main-root">
+
+  <view class="main-container" bindtap="jumpToPage">
+    <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image>
+    <text>今日练习</text>
+  </view>
+  
+  <view class="main-container-tips">
+    <text class="main-title"> 互相分享特长 </text>
+    <text class="main-content"> 人皆好为人师，你教她，她教你，感情就培养出来啦，想想杨过和小龙女吧。。 </text>
+  </view>
+
+</view>
+

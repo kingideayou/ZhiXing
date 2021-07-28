@@ -4,16 +4,6 @@
 	margin-bottom: 26rpx;
 }
 
-.title {
-	font-size: 32rpx;
-	color: #55b684;
-	font-style: initial;
-	font-weight: bold;
-	padding-left: 26rpx;
-	padding-bottom: 16rpx;
-	padding-top: 16rpx;
-}
-
 .content-section-man {
 	background: #37373f;
 	border-radius: 8rpx;
@@ -30,6 +20,16 @@
 	padding-bottom: 30rpx;
 	margin-top: 26rpx;
 	margin-bottom: 26rpx;
+}
+
+.title {
+	font-size: 32rpx;
+	color: #55b684;
+	font-style: initial;
+	font-weight: bold;
+	padding-left: 26rpx;
+	padding-bottom: 16rpx;
+	padding-top: 16rpx;
 }
 
 .content {

@@ -1,6 +1,6 @@
 /**index.wxss**/
 
-
+@import "../main/main.wxss";
 
 .userinfo {
   display: flex;

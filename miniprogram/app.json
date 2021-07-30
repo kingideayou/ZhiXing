@@ -1,15 +1,15 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/main/main",
     "pages/test/test",
     "pages/page2/page2",
-    "pages/logs/logs",
-    "pages/index/index"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#FFF",
-    "navigationBarTitleText": "zhixing",
+    "navigationBarTitleText": "知性",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
@@ -17,7 +17,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/main/main",
+        "pagePath": "pages/index/index",
         "text": "首页"
       },
       {

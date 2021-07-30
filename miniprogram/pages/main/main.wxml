@@ -1,14 +1,16 @@
 <!--miniprogram/pages/index/main.wxml-->
 <view class="main-root">
-
   <view class="main-container" bindtap="jumpToPage">
     <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image>
-    <text>今日练习</text>
+    <view class="content-parent">
+      <text class="main-title">今日练习</text>
+      <text class="main-sub-title">xxx 运动</text>
+    </view>
   </view>
   
   <view class="main-container-tips">
-    <text class="main-title">{{title}}</text>
-    <text class="main-content">{{content}}</text>
+    <text class="main-tip-title">{{title}}</text>
+    <text class="main-tip-content">{{content}}</text>
   </view>
 
 </view>

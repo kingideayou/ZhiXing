@@ -1,33 +1,51 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <block wx:if="{{canIUseOpenData}}">
-      <text>{{open-data.type.userAvatarUrl}}111</text>
-      <view class="userinfo-avatar" bindtap="bindViewTap">
-        <open-data type="userAvatarUrl"></open-data>
+<!-- 没有性别信息 -->
+<block wx:if="{{noGender}}">
+  <view class="container">
+      <view class="userinfo">
+      <block wx:if="{{canIUseOpenData}}">
+        <text>{{open-data.type.userAvatarUrl}}111</text>
+        <view class="userinfo-avatar" bindtap="bindViewTap">
+          <open-data type="userAvatarUrl"></open-data>
+        </view>
+        <open-data type="userNickName"></open-data>
+        <open-data type="userGender"></open-data>
+      </block>
+      <block wx:elif="{{!hasUserInfo}}">
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+      </block>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        <view wx:if="{{userInfo.gender == 2}}">女</view>
+        <view wx:elif="{{userInfo.gender == 1}}"> 男 </view>
+        <view wx:else> 未知 </view>
+      </block>
+    </view>
+    <view class="usermotto">
+      <text class="user-motto">{{motto}}</text>
+    </view>
+    <button bindtap="jumpToPage"> 点我跳转 </button>
+    <navigator url="/pages/test/test?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+  </view>
+</block>
+<!-- 已有性别信息，显示每日任务 -->
+<block wx:else>
+  <view class="main-root">
+    <view class="main-container" bindtap="jumpToPage">
+      <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image>
+      <view class="content-parent">
+        <text class="main-title">今日练习</text>
+        <text class="main-sub-title">xxx 运动</text>
       </view>
-      <open-data type="userNickName"></open-data>
-      <open-data type="userGender"></open-data>
-    </block>
-    <block wx:elif="{{!hasUserInfo}}">
-      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
-    </block>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <!-- <text class="userinfo-nickname">{{userInfo.gender}}</text> -->
-      <view wx:if="{{userInfo.gender == 2}}">女</view>
-      <view wx:elif="{{userInfo.gender == 1}}"> 男 </view>
-      <view wx:else> 未知 </view>
-    </block>
+    </view>
+    
+    <view class="main-container-tips">
+      <text class="main-tip-title">{{title}}</text>
+      <text class="main-tip-">{{content}}</text>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <button bindtap="jumpToPage"> 点我跳转 </button>
-  <!-- 获取用户信息：https://developers.weixin.qq.com/minigame/dev/guide/open-ability/user-info.html -->
-  <navigator url="/pages/test/test?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
+</block>
 
-</view>

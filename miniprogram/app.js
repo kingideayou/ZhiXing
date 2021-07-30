@@ -1,4 +1,3 @@
-import data from '/data.js'﻿
 
 "use strict";
 App({
@@ -17,7 +16,8 @@ App({
             }
         });
 
-        console.log("00000000000000 ---> " + data.titles)
+        var gender = wx.getStorageSync('gender');
+        console.log("gender ---> " + gender)
 
         var date = new Date();
         var dateStr = date.toLocaleDateString()

@@ -1,5 +1,4 @@
 // miniprogram/pages/index/main.js
-import tipsData from '../../data.js';
 
 Page({
 
@@ -15,10 +14,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({
-        title: tipsData.titles[0],
-        content: tipsData.contents[0]
-    })
+
   },
 
   /**

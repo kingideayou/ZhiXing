@@ -1,4 +1,7 @@
 "use strict";
+import tipsDataMan from '../../data/data-man.js';
+import tipsDataWoman from '../../data/data-woman.js';
+
 var app = getApp();
 
 Page({
@@ -6,6 +9,9 @@ Page({
         motto: 'Hello World ~',
         userInfo: {},
         hasUserInfo: false,
+        title: "",
+        content: "",
+        noGender: true,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         canIUseGetUserProfile: false,
         canIUseOpenData: false//wx.canIUse('open-data.type.userAvatarUrl') && wx.canIUse('open-data.type.userNickName')
@@ -21,6 +27,33 @@ Page({
                 canIUseGetUserProfile: true
             });
         }
+
+        var _this = this;
+        var gender = wx.getStorageSync('gender');
+        console.log("index.js === > gender = " + gender)
+        if (gender != "") {
+            _this.setData({
+                noGender: false
+            })
+        } else {
+            return
+        }
+
+        var index = Math.floor((Math.random()*10)+1)
+        if (gender == '1') { // 男
+            this.setData({
+                title: tipsDataMan.titles[index],
+                content: tipsDataMan.contents[index]
+            })
+        } else { // 女
+            this.setData({
+                title: tipsDataWoman.titles[index],
+                content: tipsDataWoman.contents[index]
+            })
+        }
+        
+        
+        
     },
     getUserProfile: function () {
         var _this = this;
@@ -29,6 +62,10 @@ Page({
             success: function (res) {
                 console.log("222222222222222");
                 console.log(res.userInfo.gender);
+                _this.setData({
+                    noGender: false
+                })
+                wx.setStorageSync('gender', res.userInfo.gender);
                 _this.setData({
                     userInfo: res.userInfo,
                     hasUserInfo: true
@@ -45,8 +82,15 @@ Page({
         });
     },
     jumpToPage: function (e) {
+        var urlStr = "/pages/page2/page2"
+        var curDays = wx.getStorageSync('days')
+        if (curDays % 2 == 0) {
+          urlStr = "/pages/page2/page2"
+        } else {
+          urlStr = "/pages/test/test"
+        }
         wx.navigateTo({
-            url: '/pages/test/test?id=1',
+            url: urlStr,
             events: {
               // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
               acceptDataFromOpenedPage: function(data) {

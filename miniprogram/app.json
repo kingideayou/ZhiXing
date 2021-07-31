@@ -8,22 +8,10 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarBackgroundColor": "#333333",
     "navigationBarTitleText": "知性",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json",
-  "tabBar": {
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "我"
-      }
-    ]
-  }
+  "sitemapLocation": "sitemap.json"
 }

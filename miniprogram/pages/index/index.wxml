@@ -34,17 +34,38 @@
 <!-- 已有性别信息，显示每日任务 -->
 <block wx:else>
   <view class="main-root">
-    <view class="main-container" bindtap="jumpToPage">
-      <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image>
-      <view class="content-parent">
-        <text class="main-title">今日练习</text>
-        <text class="main-sub-title">xxx 运动</text>
+
+    <view class="keep-date">
+      <text class="keep-title">已坚持</text>
+      <view class="test">
+        <text class="keep-count">99</text>
+        <text class="keep-title-2">天</text>
       </view>
     </view>
-    
+
+    <view class="main-container" bindtap="jumpToPage">
+      <view class="indicator-first"></view>
+      <!-- <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image> -->
+      <view class="content-parent">
+        <text class="main-title">{{kegelTitle}}</text>
+        <text class="main-sub-title">凯格尔运动</text>
+      </view>
+    </view>
+
+    <view class="main-container" bindtap="jumpToPhysicalPage">
+      <view class="indicator-first"></view>
+      <!-- <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image> -->
+      <view class="content-parent">
+        <text class="main-title">{{physicalTitle}}</text>
+        <text class="main-sub-title">每日训练</text>
+      </view>
+    </view>
+
+
     <view class="main-container-tips">
+      <view class="indicator-hor"></view>
       <text class="main-tip-title">{{title}}</text>
-      <text class="main-tip-">{{content}}</text>
+      <text class="main-tip-content">{{content}}</text>
     </view>
   </view>
 </block>

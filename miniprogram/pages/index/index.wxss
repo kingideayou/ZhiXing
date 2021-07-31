@@ -2,6 +2,51 @@
 
 @import "../main/main.wxss";
 
+page {
+  height: 100%;
+  background-color: #333333;
+}
+
+.test {
+  /* height: 200rpx; */
+  /* background-color: crimson; */
+  flex-direction: row;
+}
+
+.keep-date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120rpx;
+  width: 80%;
+  margin-bottom: 50rpx;
+  /* background-color: #000000; */
+  /* background-color: cornflowerblue; */
+}
+
+.keep-count {
+  font-size: 100rpx;
+  /* color: #fefefe; */
+  color: #1eb980;
+  font-weight: bold;
+  border-radius: 5rpx;
+  /* background-color: #1eb980; */
+}
+
+.keep-title {
+  font-size: 30rpx;
+  color: #fefefe;
+  /* background-color: crimson; */
+  margin-left: 6rpx;
+  display: unset;
+}
+
+.keep-title-2 {
+  font-size: 32rpx;
+  color: #fefefe;
+  margin-left: 10rpx;
+  /* background-color: coral; */
+}
+
 .userinfo {
   display: flex;
   flex-direction: column;
@@ -19,4 +64,21 @@
 
 .usermotto {
   margin-top: 200px;
+}
+
+.indicator-first {
+  height: 100rpx;
+  width: 8rpx;
+  margin-left: 20rpx;
+  border-radius: 16rpx;
+  background-color: #1eb980;
+}
+
+.indicator-hor {
+  height: 8rpx;
+  border-radius: 6rpx 6rpx 0rpx  0rpx;
+  width: 100%;
+  /* background-color: #347b54; */
+  background: linear-gradient(to left, #50b683, #1eb980, #74ebbd);
+
 }

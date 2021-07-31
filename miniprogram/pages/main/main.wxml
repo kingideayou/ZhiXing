@@ -1,5 +1,6 @@
 <!--miniprogram/pages/index/main.wxml-->
 <view class="main-root">
+  
   <view class="main-container" bindtap="jumpToPage">
     <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image>
     <view class="content-parent">

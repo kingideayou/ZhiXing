@@ -16,7 +16,7 @@ page {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #EDEDED;
+  background-color: #191919;
   box-sizing: border-box;
 }
 
@@ -25,57 +25,60 @@ page {
   height: 140rpx;
   display: flex;
   align-items: center;
-  margin: 20rpx;
-  margin-top: 30%;
+  margin: 4rpx;
+  background-color: #000000;
   border-radius: 12rpx;
-  background-color: #ffffff;
   box-sizing: border-box;
 } 
 
 
 .main-container-tips {
   display: flex;
+  width: 80%;
   flex-direction: column;
-  align-items: center;
   border-radius: 12rpx;
+  /* background-color: #363636; */
+  background-color: #000000;
   margin-top: 80rpx;
+  padding-bottom: 32rpx;
 }
 
 .content-parent {
   display: flex;
   flex-direction: column;
-  align-items: center;
+	padding-left: 20rpx;
 }
 
 .main-title {
-	font-size: 36rpx;
-	color: #333333;
+	font-size: 32rpx;
+	color: #cdcdcd;
 	font-weight: bold;
-	padding-left: 36rpx;
 }
 
 
 .main-sub-title {
-  font-size: 32rpx;
-	color: #565656;
+  font-size: 22rpx;
+	color: #bcbcbc;
 	font-weight: bold;
-	padding-left: 36rpx;
 }
 
 .main-tip-title {
-  font-size: 38rpx;
-	color: #333333;
-	font-weight: bold;
-	padding-left: 36rpx;
+  font-size: 32rpx;
+	color: #cdcdcd;
+  font-weight: bold;
+  margin-top: 30rpx;
+  padding-left: 38rpx;
+  padding-right: 38rpx;
+  align-self: flex-start;
 }
 
 .main-tip-content {
 	display: flex;
 	flex-direction: column;
 	font-size: 30rpx;
-	/* color: #74ebbd; */
-	color: #333333;
-	padding-left: 52rpx;
+  color: #cdcdcd;
+  padding-left: 38rpx;
+  padding-right: 38rpx;
 	padding-top: 18rpx;
 	padding-bottom: 4rpx;
 }

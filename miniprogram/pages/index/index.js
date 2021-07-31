@@ -2,6 +2,13 @@
 import tipsDataMan from '../../data/data-man.js';
 import tipsDataWoman from '../../data/data-woman.js';
 
+
+import kegelDataMan from '../../data/kegel-man.js';
+import kegelDataWoman from '../../data/kegel-woman.js';
+
+import physicalDataMan from '../../data/physical-man.js';
+import physicalDataWoman from '../../data/physical-woman.js';
+
 var app = getApp();
 
 Page({
@@ -11,6 +18,8 @@ Page({
         hasUserInfo: false,
         title: "",
         content: "",
+        kegelTitle: "",
+        physicalTitle: "",
         noGender: true,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         canIUseGetUserProfile: false,
@@ -39,20 +48,30 @@ Page({
             return
         }
 
+        // var days = wx.getStorageSync('days')
+        var days = 100
+
         var index = Math.floor((Math.random()*10)+1)
+
+        console.log("days : " + days)
+        console.log("tipsDataMan.titles.length : " + (parseInt(days)))
+        console.log("tipsDataMan.titles.length : " + (parseInt(days) % kegelDataMan.titles.length))
+
         if (gender == '1') { // 男
             this.setData({
-                title: tipsDataMan.titles[index],
-                content: tipsDataMan.contents[index]
+                title: tipsDataMan.titles[days % tipsDataMan.titles.length],
+                content: tipsDataMan.contents[days % tipsDataMan.contents.length],
+                kegelTitle: kegelDataMan.titles[days % kegelDataMan.titles.length],
+                physicalTitle: physicalDataMan.titles[days % physicalDataMan.titles.length]
             })
         } else { // 女
             this.setData({
                 title: tipsDataWoman.titles[index],
-                content: tipsDataWoman.contents[index]
+                content: tipsDataWoman.contents[index],
+                kegelTitle: kegelDataWoman.titles[index],
+                physicalTitle: physicalDataWoman.titles[index]
             })
-        }
-        
-        
+        }  
         
     },
     getUserProfile: function () {
@@ -84,11 +103,33 @@ Page({
     jumpToPage: function (e) {
         var urlStr = "/pages/page2/page2"
         var curDays = wx.getStorageSync('days')
-        if (curDays % 2 == 0) {
+        // if (curDays % 2 == 0) {
           urlStr = "/pages/page2/page2"
-        } else {
-          urlStr = "/pages/test/test"
-        }
+        // } else {
+        //   urlStr = "/pages/test/test"
+        // }
+        wx.navigateTo({
+            url: urlStr,
+            events: {
+              // 为指定事件添加一个监听器，获取被打开页面传送到当前页面的数据
+              acceptDataFromOpenedPage: function(data) {
+                console.log(data)
+              },
+              someEvent: function(data) {
+                console.log(data)
+              }
+            },
+            success: function(res) {
+                console.log("跳转 111111")
+              // 通过eventChannel向被打开页面传送数据
+            //   res.eventChannel.emit('acceptDataFromOpenerPage', { data: 'test' })
+            }
+          })
+    },
+    jumpToPhysicalPage: function (e) {
+        var urlStr = "/pages/page2/page2"
+        var curDays = wx.getStorageSync('days')
+        urlStr = "/pages/test/test"
         wx.navigateTo({
             url: urlStr,
             events: {

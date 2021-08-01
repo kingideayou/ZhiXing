@@ -27,8 +27,6 @@
     <view class="usermotto">
       <text class="user-motto">{{motto}}</text>
     </view>
-    <button bindtap="jumpToPage"> 点我跳转 </button>
-    <navigator url="/pages/test/test?title=navigate" hover-class="navigator-hover">跳转到新页面</navigator>
   </view>
 </block>
 <!-- 已有性别信息，显示每日任务 -->
@@ -43,7 +41,7 @@
       </view>
     </view>
 
-    <view class="main-container" bindtap="jumpToPage">
+    <view class="main-container" bindtap="jumpToKegelPage">
       <view class="indicator-first"></view>
       <!-- <image class="main-img" mode="scaleToFill" src="../../img/18.png"></image> -->
       <view class="content-parent">

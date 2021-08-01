@@ -1,5 +1,5 @@
 <view class="root">
-  <image class="head-img" mode="aspectFit" src="../../../img/1.png"></image>
+  <image class="head-img" mode="aspectFit" src="../../../img/1.jpg"></image>
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">

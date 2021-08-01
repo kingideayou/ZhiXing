@@ -35,6 +35,9 @@ App({
         var lastStartDay = 0;
         try {
             value = wx.getStorageSync('days')
+            if (isNaN(value)) {
+                value = 0;
+            }
             lastStartDay = wx.getStorageSync('lastStartDay')
             console.log("value :" + value)
             console.log("lastStartDay :" + lastStartDay)

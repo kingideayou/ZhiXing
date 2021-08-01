@@ -34,7 +34,7 @@ page {
 
 .keep-title {
   font-size: 30rpx;
-  color: #fefefe;
+  color: #bcbcbc;
   /* background-color: crimson; */
   margin-left: 6rpx;
   display: unset;
@@ -42,7 +42,7 @@ page {
 
 .keep-title-2 {
   font-size: 32rpx;
-  color: #fefefe;
+  color: #bcbcbc;
   margin-left: 10rpx;
   /* background-color: coral; */
 }

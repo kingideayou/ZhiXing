@@ -2,7 +2,6 @@
 import tipsDataMan from '../../data/data-man.js';
 import tipsDataWoman from '../../data/data-woman.js';
 
-
 import kegelDataMan from '../../data/kegel-man.js';
 import kegelDataWoman from '../../data/kegel-woman.js';
 
@@ -48,30 +47,92 @@ Page({
             return
         }
 
-        // var days = wx.getStorageSync('days')
-        var days = 100
+        var days = wx.getStorageSync('days')
 
-        var index = Math.floor((Math.random()*10)+1)
+        if (days == '' || isNaN(days)) {
+            days = 0;
+        }
 
-        console.log("days : " + days)
-        console.log("tipsDataMan.titles.length : " + (parseInt(days)))
-        console.log("tipsDataMan.titles.length : " + (parseInt(days) % kegelDataMan.titles.length))
+        // console.log("index.js - days : " + days)
+        // console.log("days : " + days)
+        // console.log("tipsDataMan.titles.length : " + (parseInt(days)))
+        // console.log("tipsDataMan.titles.length : " + (parseInt(days) % kegelDataMan.titles.length))
 
+        var tipIndex = Math.floor((Math.random()*tipsDataMan.titles.length)+1) % tipsDataMan.titles.length;
         if (gender == '1') { // 男
             this.setData({
-                title: tipsDataMan.titles[days % tipsDataMan.titles.length],
-                content: tipsDataMan.contents[days % tipsDataMan.contents.length],
+                title: tipsDataMan.titles[tipIndex],
+                content: tipsDataMan.contents[tipIndex],
                 kegelTitle: kegelDataMan.titles[days % kegelDataMan.titles.length],
                 physicalTitle: physicalDataMan.titles[days % physicalDataMan.titles.length]
             })
         } else { // 女
             this.setData({
-                title: tipsDataWoman.titles[index],
-                content: tipsDataWoman.contents[index],
-                kegelTitle: kegelDataWoman.titles[index],
-                physicalTitle: physicalDataWoman.titles[index]
+                title: tipsDataWoman.titles[tipIndex],
+                content: tipsDataWoman.contents[tipIndex],
+                kegelTitle: kegelDataWoman.titles[days % kegelDataWoman.titles.length],
+                physicalTitle: physicalDataWoman.titles[days % physicalDataWoman.titles.length]
             })
         }  
+        
+    },
+    onShow: function () {
+
+        var gender = wx.getStorageSync('gender');
+        // console.log("index.js === > gender = " + gender)
+        if (gender == "") {
+            return
+        }
+
+        var _this = this;
+
+        var lastStartDay = wx.getStorageSync('lastStartDay')
+        var date = new Date();
+        var dateStr = date.toLocaleDateString()
+
+        try {
+            if (lastStartDay != dateStr) { // 不是同一日期，刷新所有数据
+                wx.setStorageSync('lastStartDay', dateStr)
+                
+                var days = wx.getStorageSync('days')
+
+                if (days == '' || isNaN(days)) {
+                    days = 0;
+                }
+
+                var tipIndex = Math.floor((Math.random()*tipsDataMan.titles.length)+1) % tipsDataMan.titles.length;
+                if (gender == '1') { // 男
+                    _this.setData({
+                        title: tipsDataMan.titles[tipIndex],
+                        content: tipsDataMan.contents[tipIndex],
+                        kegelTitle: kegelDataMan.titles[days % kegelDataMan.titles.length],
+                        physicalTitle: physicalDataMan.titles[days % physicalDataMan.titles.length]
+                    })
+                } else { // 女
+                    _this.setData({
+                        title: tipsDataWoman.titles[tipIndex],
+                        content: tipsDataWoman.contents[tipIndex],
+                        kegelTitle: kegelDataWoman.titles[days % kegelDataWoman.titles.length],
+                        physicalTitle: physicalDataWoman.titles[days % physicalDataWoman.titles.length]
+                    })
+                } 
+            } else {// 是同一日期，只刷新 Tips
+                var gender = wx.getStorageSync('gender');
+                var tipIndex = Math.floor((Math.random()*tipsDataMan.titles.length)+1) % tipsDataMan.titles.length;
+                if (gender == '1') { // 男
+                    _this.setData({
+                        title: tipsDataMan.titles[tipIndex],
+                        content: tipsDataMan.contents[tipIndex],
+                    })
+                } else { // 女
+                    _this.setData({
+                        title: tipsDataWoman.titles[tipIndex],
+                        content: tipsDataWoman.contents[tipIndex],
+                    })
+                }  
+            }
+        } catch (e) {
+        }
         
     },
     getUserProfile: function () {
@@ -100,14 +161,28 @@ Page({
             hasUserInfo: true
         });
     },
-    jumpToPage: function (e) {
-        var urlStr = "/pages/man/page2/page2"
-        var curDays = wx.getStorageSync('days')
-        // if (curDays % 2 == 0) {
-          urlStr = "/pages/man/kegel1/kegel"
-        // } else {
-        //   urlStr = "/pages/test/test"
-        // }
+    jumpToKegelPage: function (e) {
+        var urlStr = ""
+        var days = wx.getStorageSync('days')
+
+        if (days == '' || isNaN(days)) {
+            days = 0;
+        }
+
+        var daysInt = 0;
+
+        var gender = wx.getStorageSync('gender');
+
+        if (gender == '1') {
+            daysInt = (parseInt(days, 10) + 1) % kegelDataMan.titles.length
+            urlStr = "/pages/man/kegel" + daysInt + "/kegel"
+        } else {
+            daysInt = (parseInt(days, 10) + 1) % kegelDataWoman.titles.length
+            urlStr = "/pages/woman/kegel" + daysInt + "/kegel"
+        }
+
+        console.log("urlStr : " + urlStr)
+        
         wx.navigateTo({
             url: urlStr,
             events: {

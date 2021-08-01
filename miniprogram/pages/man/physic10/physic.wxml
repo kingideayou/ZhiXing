@@ -1,0 +1,28 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/15.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 低头、抬头做两个八拍
+    </text>
+    <text class="content"> 
+      2. 左右摆头做两个八拍
+    </text>
+    <text class="content"> 
+      3. 向左转头看向后背左肩胛骨保持8秒
+    </text>
+    <text class="content"> 
+      4. 向右转头看向右后背右肩胛骨保持8秒
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    · 预防和缓解伏案工作造成的颈椎痛
+  </text>
+ 
+</view>

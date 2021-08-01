@@ -1,0 +1,25 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/8.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 平趴在垫子上，伸展手臂和腿
+    </text>
+    <text class="content"> 
+      2. 将手臂和腿尽量抬高，保持3-5秒，然后放下
+    </text>
+    <text class="content"> 
+      3. 连续做10次
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    · 预防和缓解背痛
+  </text>
+ 
+</view>

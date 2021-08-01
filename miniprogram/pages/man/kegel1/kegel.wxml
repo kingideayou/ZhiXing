@@ -1,0 +1,32 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/1.jpg"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 找一找憋小便的感觉，感受一下用的是哪些区域的肌肉，这部分肌肉就是你要锻炼的PC肌了
+    </text>
+    <text class="content"> 
+      2. 收缩那部分肌肉，坚持5秒，放松，再收缩
+    </text>
+    <text class="content"> 
+      3. 每组做20次，共做5组
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    PC肌能够帮助男性更好地控制射精和改善勃起状况。当然，你先得找到PC肌在哪儿。此外一般人很少会刻意锻炼PC肌肉，所以让我们先从最轻松的做起。
+  </text>
+
+  <text class="title"> 
+    注意事项 
+  </text>
+  <text class="content"> 
+    · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。初次练习用平躺的姿势会舒服些。
+  </text>
+ 
+</view>

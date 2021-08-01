@@ -1,0 +1,2 @@
+/* miniprogram/pages/kegel1/kegel.wxss */
+@import "../../test/test.wxss";

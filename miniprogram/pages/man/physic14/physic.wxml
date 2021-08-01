@@ -1,0 +1,27 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/19.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 站直，双脚分开比肩部稍宽
+    </text>
+    <text class="content"> 
+      2. 脚尖斜向外侧，双手扶胯部，下蹲，然后站起来
+    </text>
+    <text class="content"> 
+      3. 尽量保持动作稳定和匀速，做12-15次
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    1. 拉伸鼠蹊部，增加膝关节支撑和下身稳定性
+  </text>
+  <text class="content"> 
+    2. 同时能够锻炼臀部
+  </text>
+</view>

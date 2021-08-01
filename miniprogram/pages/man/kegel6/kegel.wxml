@@ -1,0 +1,29 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/1.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 深深地收缩你的PC肌，保持1min
+    </text>
+    <text class="content"> 
+      2. 休息1min，做1次
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    这次，不仅是肌肉的训练，也是意志的磨练，二者的结合会带给你和伴侣更大的快乐，请坚持住。
+  </text>
+
+  <text class="title"> 
+    注意事项 
+  </text>
+  <text class="content"> 
+    · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。
+  </text>
+ 
+</view>

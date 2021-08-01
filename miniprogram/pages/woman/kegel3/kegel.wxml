@@ -1,0 +1,29 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/101.jpg"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 在10秒钟内以尽可能高的频率收缩你的PC肌，然后休息10秒
+    </text>
+    <text class="content"> 
+      2. 坚持做3组
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    千篇一律的规律练习会让你的肌肉适应，导致锻炼效果下降。所以试试别的方式吧，这会是个挺大的挑战，试试看你究竟能做多快。
+  </text>
+
+  <text class="title"> 
+    注意事项 
+  </text>
+  <text class="content"> 
+    · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。
+  </text>
+ 
+</view>

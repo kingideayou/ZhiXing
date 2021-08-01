@@ -1,0 +1,25 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/116.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 平坐在地上，大腿分开，膝盖弯曲，使双脚脚心贴合
+    </text>
+    <text class="content"> 
+      2. 膝盖尽量朝两侧打开，用双手尽量将脚跟拉向臀部
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    1. 增加身体柔软度，缓解肌肉酸痛
+  </text>
+  <text class="content"> 
+    2. 避免性爱中的僵硬和拉伤
+  </text>
+
+</view>

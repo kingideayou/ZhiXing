@@ -1,0 +1,38 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/124.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 平时爬楼梯时一步上两个台阶
+    </text>
+    <text class="content"> 
+      2. 注意，上升速度要和一级一级爬时一样慢
+    </text>
+    <text class="content"> 
+      3. 可稍微弯腰以便锻炼臀大肌
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    1. 锻炼下肢力量和关节支撑
+  </text>
+  <text class="content"> 
+    2. 锻炼心血管机能
+  </text>
+  <text class="content"> 
+    3. 让臀部看起来更加挺翘
+  </text>
+  
+  <text class="title"> 
+    注意事项 
+  </text>
+  <text class="content"> 
+    · 注意，穿高跟鞋时请勿练习
+  </text>
+
+</view>

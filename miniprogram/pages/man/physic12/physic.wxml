@@ -1,0 +1,24 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/17.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 仰躺，双手抱左膝拉向胸前以拉伸背部和臀部
+    </text>
+    <text class="content"> 
+      2. 保持半分钟，换腿再做一次，重复2-3轮
+    </text>
+    <text class="content"> 
+      3. 最后再双手抱住双膝，团身保持半分钟
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    · 增加身体柔软度，缓解背部酸痛
+  </text> 
+</view>

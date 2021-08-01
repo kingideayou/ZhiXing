@@ -101,10 +101,10 @@ Page({
         });
     },
     jumpToPage: function (e) {
-        var urlStr = "/pages/page2/page2"
+        var urlStr = "/pages/man/page2/page2"
         var curDays = wx.getStorageSync('days')
         // if (curDays % 2 == 0) {
-          urlStr = "/pages/page2/page2"
+          urlStr = "/pages/man/kegel1/kegel"
         // } else {
         //   urlStr = "/pages/test/test"
         // }
@@ -127,9 +127,8 @@ Page({
           })
     },
     jumpToPhysicalPage: function (e) {
-        var urlStr = "/pages/page2/page2"
+        var urlStr = "/pages/man/physic1/physic"
         var curDays = wx.getStorageSync('days')
-        urlStr = "/pages/test/test"
         wx.navigateTo({
             url: urlStr,
             events: {

@@ -1,0 +1,28 @@
+<view class="root">
+  <image class="head-img" mode="aspectFit" src="../../../img/114.png"></image>
+  <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
+
+  <view class="content-section-{{theme}}">
+    <text class="title"> 动作说明 </text>
+    <text class="content"> 
+      1. 以俯卧撑准备动作开始，轻轻跳一下
+    </text>
+    <text class="content"> 
+      2. 弯曲右腿使右膝尽可能贴近胸部，同时左腿蹬直，随后换边
+    </text>
+    <text class="content"> 
+      3. 做45秒，在保证身体稳定动作到位的前提下，可以频率快一些
+    </text>
+  </view>
+
+  <text class="title"> 
+    动作目的 
+  </text>
+  <text class="content"> 
+    1. 提升心率，锻炼核心肌群
+  </text>
+  <text class="content"> 
+    2. 缓解久坐造成的腰部和臀部疲劳。
+  </text>
+ 
+</view>

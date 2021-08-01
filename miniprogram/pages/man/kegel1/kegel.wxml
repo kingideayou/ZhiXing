@@ -19,8 +19,10 @@
 
   <view class="bottom-area"></view>
 
-  <view bindtap='finishClick'>
-    <view class="button_finish">已完成</view>
-  </view>
+  <!-- <block wx:if="{{!finish}}">
+    <view bindtap='finishClick'>
+      <view class="button_finish">已完成</view>
+    </view>
+  </block> -->
  
 </view>

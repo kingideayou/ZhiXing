@@ -7,7 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    finish: true
   },
 
   /**
@@ -69,5 +69,8 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  finishClick: function () {
+    wx.setStorageSync('kegelFinishDate', data)
   }
 })

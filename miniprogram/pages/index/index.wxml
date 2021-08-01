@@ -1,7 +1,23 @@
 <!--index.wxml-->
 <!-- 没有性别信息 -->
 <block wx:if="{{noGender}}">
-  <view class="container">
+  <view>
+      <view class="usermotto">
+        <text class="welcome-title">🎉 欢迎来到「知性」小程序</text>
+        <text class="user-motto">
+          这是一款凯格尔运动(PC 肌)💪锻炼的小程序(也有一些其他基础运动)，里面的内容都来自于多年前下架的果壳旗下的知性 App。
+
+          在知性下架时就想写一款相应的软件，一直拖了好多年，现在发布出来希望能顺便提高一下生育率。
+
+          针对男女的训练稍微有些不同，所以在首次登录时需要获取一下性别信息。
+          
+          如果有对象的小伙伴欢迎推荐给你的另一半，单身的小伙伴可以像我一样默默练习。🤪
+
+          （感觉这个运动上班时就可以练）
+
+          👇 点击下方按钮开始练习吧！~
+        </text>
+      </view>
       <view class="userinfo">
       <block wx:if="{{canIUseOpenData}}">
         <text>{{open-data.type.userAvatarUrl}}111</text>
@@ -12,8 +28,8 @@
         <open-data type="userGender"></open-data>
       </block>
       <block wx:elif="{{!hasUserInfo}}">
-        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
-        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+        <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 开始练习 </button>
+        <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 开始练习 </button>
         <view wx:else> 请使用1.4.4及以上版本基础库 </view>
       </block>
       <block wx:else>
@@ -24,9 +40,6 @@
         <view wx:else> 未知 </view>
       </block>
     </view>
-    <view class="usermotto">
-      <text class="user-motto">{{motto}}</text>
-    </view>
   </view>
 </block>
 <!-- 已有性别信息，显示每日任务 -->
@@ -36,7 +49,7 @@
     <view class="keep-date">
       <text class="keep-title">已坚持</text>
       <view class="test">
-        <text class="keep-count">99</text>
+        <text class="keep-count">{{keepDays}}</text>
         <text class="keep-title-2">天</text>
       </view>
     </view>
@@ -65,6 +78,9 @@
       <text class="main-tip-title">{{title}}</text>
       <text class="main-tip-content">{{content}}</text>
     </view>
+
+    <navigator url="../about/about" class="about-author" hover-class="navigator-hover">关于作者</navigator>
+
   </view>
 </block>
 

@@ -1,0 +1,13 @@
+<view class="root">
+  <view class="title"> 
+    关于我
+  </view>
+  <text class="content"> 
+    我很懒，我的微博用户名是：NeXT___（即刻同名）
+
+    如果觉得这个软件对你有帮助可以给我打赏。🤪
+
+
+  </text>
+  <image class="head-img" mode="aspectFit" src="../../img/pay.png"></image>
+</view>

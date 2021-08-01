@@ -62,10 +62,6 @@ page {
   border-radius: 50%;
 }
 
-.usermotto {
-  margin-top: 200px;
-}
-
 .indicator-first {
   height: 100rpx;
   width: 8rpx;
@@ -81,4 +77,39 @@ page {
   /* background-color: #347b54; */
   background: linear-gradient(to left, #50b683, #1eb980, #74ebbd);
 
+}
+
+.usermotto {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left: 10%;
+  /* background-color: aqua; */
+}
+
+.user-motto {
+  /* background-color: aqua; */
+  color: #ededed;
+  font-size: 30rpx;
+  padding-bottom: 60rpx;
+}
+
+.welcome-title {
+  font-size: 42rpx;
+  color: #ededed;
+  margin-top: 120rpx;
+  width: 100%;
+}
+
+.about-author {
+  color: #aaaaaa;
+  font-size: 12rpx;
+  position: fixed;
+	width: 40%;
+	font-size: 30rpx;
+	bottom: 36rpx;
+	text-align: center;
+	align-content: center;
+  left: 30%;
+  text-decoration:underline;
 }

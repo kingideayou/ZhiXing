@@ -19,6 +19,7 @@ Page({
         content: "",
         kegelTitle: "",
         physicalTitle: "",
+        keepDays: 0,
         noGender: true,
         canIUse: wx.canIUse('button.open-type.getUserInfo'),
         canIUseGetUserProfile: false,
@@ -53,10 +54,9 @@ Page({
             days = 0;
         }
 
-        // console.log("index.js - days : " + days)
-        // console.log("days : " + days)
-        // console.log("tipsDataMan.titles.length : " + (parseInt(days)))
-        // console.log("tipsDataMan.titles.length : " + (parseInt(days) % kegelDataMan.titles.length))
+        this.setData({
+            keepDays: days
+        })
 
         var tipIndex = Math.floor((Math.random()*tipsDataMan.titles.length)+1) % tipsDataMan.titles.length;
         if (gender == '1') { // 男
@@ -150,6 +150,7 @@ Page({
                     userInfo: res.userInfo,
                     hasUserInfo: true
                 });
+                _this.onLoad
             }
         });
     },

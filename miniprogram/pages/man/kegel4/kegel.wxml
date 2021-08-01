@@ -28,5 +28,11 @@
   <view class="content"> 
     · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。
   </view>
+
+  <!-- <block wx:if="{{!finish}}">
+    <view bindtap='finishClick'>
+      <view class="button_finish">已完成</view>
+    </view>
+  </block> -->
  
 </view>

@@ -50,7 +50,8 @@
     "pages/woman/physic13/physic",
     "pages/woman/physic14/physic",
     "pages/woman/physic15/physic",
-    "pages/woman/physic16/physic"
+    "pages/woman/physic16/physic",
+    "pages/about/about"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -175,10 +175,10 @@ Page({
 
         if (gender == '1') {
             daysInt = (parseInt(days, 10) + 1) % kegelDataMan.titles.length
-            urlStr = "/pages/man/kegel" + daysInt + "/kegel"
+            urlStr = "/pages/man/kegel" + daysInt + "/kegel?title=" + kegelDataMan.titles[daysInt - 1]
         } else {
             daysInt = (parseInt(days, 10) + 1) % kegelDataWoman.titles.length
-            urlStr = "/pages/woman/kegel" + daysInt + "/kegel"
+            urlStr = "/pages/woman/kegel" + daysInt + "/kegel?title=" + kegelDataWoman.titles[daysInt - 1]
         }
 
         console.log("urlStr : " + urlStr)
@@ -202,8 +202,27 @@ Page({
           })
     },
     jumpToPhysicalPage: function (e) {
-        var urlStr = "/pages/man/physic1/physic"
-        var curDays = wx.getStorageSync('days')
+
+        var urlStr = ""
+        var days = wx.getStorageSync('days')
+
+        if (days == '' || isNaN(days)) {
+            days = 0;
+        }
+
+        var daysInt = 0;
+
+        var gender = wx.getStorageSync('gender');
+
+        if (gender == '1') {
+            daysInt = (parseInt(days, 10) + 1) % physicalDataMan.titles.length
+            urlStr = "/pages/man/physic" + daysInt + "/physic?title=" + physicalDataMan.titles[daysInt - 1]
+        } else {
+            daysInt = (parseInt(days, 10) + 1) % physicalDataWoman.titles.length
+            urlStr = "/pages/woman/physic" + daysInt + "/physic?title=" + physicalDataWoman.titles[daysInt - 1]
+        }
+        // var urlStr = "/pages/man/physic1/physic"
+        // var curDays = wx.getStorageSync('days')
         wx.navigateTo({
             url: urlStr,
             events: {

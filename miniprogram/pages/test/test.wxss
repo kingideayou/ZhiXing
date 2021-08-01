@@ -43,6 +43,7 @@ page {
 	font-size: 28rpx;
 	/* color: #74ebbd; */
 	color: #eeeeee;
+	font-family: 'Times New Roman', Times, serif;
 	padding-left: 52rpx;
 	padding-top: 4rpx;
 	padding-bottom: 4rpx;
@@ -56,6 +57,26 @@ page {
 	/* background: #42424f; */
 	padding: 26rpx;
 }
+
+.button_finish {
+	position: fixed;
+	width: 40%;
+	background-color: #1eb980;
+	color: #cbcbcb;
+	font-size: 30rpx;
+	border-radius: 20rpx;
+	padding-bottom: 12rpx;
+	padding-top: 12rpx;
+	bottom: 30rpx;
+	text-align: center;
+	align-content: center;
+	left: 30%;
+}
+
+.bottom-area {
+	height: 40rpx;
+}
+
 /* 
 body {
 	margin: 0;

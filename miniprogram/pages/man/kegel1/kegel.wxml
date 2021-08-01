@@ -17,5 +17,10 @@
   <view class="title"> 注意事项 </view>
   <view class="content"> · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。初次练习用平躺的姿势会舒服些。</view>
 
+  <view class="bottom-area"></view>
+
+  <view bindtap='finishClick'>
+    <view class="button_finish">已完成</view>
+  </view>
  
 </view>

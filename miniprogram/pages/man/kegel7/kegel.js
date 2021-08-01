@@ -1,4 +1,6 @@
 // miniprogram/pages/kegel1/kegel.js
+// import test from '../../test/test';
+
 Page({
 
   /**
@@ -12,7 +14,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log("options : " + options)
+    console.log("title : " + options.title)
+    var titleStr = options.title
+    wx.setNavigationBarTitle({
+      title: titleStr  
+    })
   },
 
   /**

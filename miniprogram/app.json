@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/man/kegel2/kegel",
+
     "pages/index/index",
     "pages/main/main",
     "pages/test/test",
     "pages/page2/page2",
     "pages/logs/logs",
     "pages/man/kegel1/kegel",
-    "pages/man/kegel2/kegel",
     "pages/man/kegel3/kegel",
     "pages/man/kegel4/kegel",
     "pages/man/kegel5/kegel",

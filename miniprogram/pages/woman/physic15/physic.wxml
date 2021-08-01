@@ -3,26 +3,26 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 站姿，双脚分开约两倍肩宽，注意双脚平行正对前方
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 略微弯腰，将重心放在右腿上，弯曲右膝下蹲。
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 回到站立姿势，再换左边。
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       4. 做2-4个八拍
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 锻炼下肢力量和关节支撑
-  </text>
+  </view>
 
 </view>

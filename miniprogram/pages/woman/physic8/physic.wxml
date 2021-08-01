@@ -3,32 +3,32 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 弯曲手肘，双手平举在胸前
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 高抬腿尽量使膝盖触碰同侧手肘
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 腿伸直，臀部不可高于肩部
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 左右轮换，做20个
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     1. 锻炼下肢力量和关节支撑
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     2. 锻炼心血管机能
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     3. 提高柔韧性
-  </text>
+  </view>
 
 </view>

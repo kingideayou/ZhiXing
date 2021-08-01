@@ -3,27 +3,27 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 收缩PC肌肉，保持20秒
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 休息5秒，坚持做5组
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     这会是更接近实战的训练，一定程度上能帮你改善节奏，更好地分配体力和注意力。
-  </text>
+  </view>
 
-  <text class="title"> 
+  <view class="title"> 
     注意事项 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。
-  </text>
+  </view>
  
 </view>

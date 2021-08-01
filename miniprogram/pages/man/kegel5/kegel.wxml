@@ -3,30 +3,30 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 想象你熟悉的一首乐曲的旋律和节奏或者真的听一首
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 随着乐曲的旋律和节奏收缩PC肌
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     这项训练能帮助你进一步随心所欲地控制PC肌，这项练习还很有趣吗，不会让你感到枯燥。最后，它能被直接应用于实战中，带给伴侣全新的刺激。
-  </text>
+  </view>
 
-  <text class="title"> 
+  <view class="title"> 
     注意事项 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 初学者请勿使用节奏过于明快的乐曲。
-  </text>
+  </view>
  
 </view>

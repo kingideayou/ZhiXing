@@ -3,26 +3,26 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 正常站立，手臂放在身体两侧，向上跳
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 落地时双脚分开，双臂举高超过头顶
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 再跳一次，落地时双脚并紧，双臂重回身体两侧
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       4. 做4个八拍
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 能够快速提高心率，锻炼心血管机能，活动全身
-  </text>
+  </view>
   
 </view>

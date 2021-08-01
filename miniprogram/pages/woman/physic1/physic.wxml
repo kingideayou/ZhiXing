@@ -3,36 +3,36 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 俯卧，用手肘和前臂撑住地板，肘关节和肩部成直角
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 身体伸直，尽量保持一个平板的状态
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 腿伸直，臀部不可高于肩部
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       4. 坚持30秒
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     1. 锻炼腹肌，让腰部更有力量
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     2. E2核心集群最佳锻炼动作
-  </text>
+  </view>
 
-  <text class="title"> 
+  <view class="title"> 
     注意事项 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 如果完成比较轻松够可以相应增加时间
-  </text>
+  </view>
  
 </view>

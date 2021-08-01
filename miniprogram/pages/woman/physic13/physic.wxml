@@ -3,26 +3,26 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 坐在床上，抻直右腿，左脚掌抵住右腿内侧
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 身体向右腿倾斜，拉伸韧带，保持30秒
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 换边再做一次
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     1. 增加身体柔软度
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     2. 缓解臀部、背部疼痛
-  </text>
+  </view>
  
 </view>

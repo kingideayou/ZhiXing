@@ -1,3 +1,8 @@
+page {
+  height: 100%;
+  background-color: #333333;
+}
+
 .head-img {
 	width: 100%;
 	margin-top: 26rpx;
@@ -41,13 +46,14 @@
 	padding-left: 52rpx;
 	padding-top: 4rpx;
 	padding-bottom: 4rpx;
+	overflow-wrap: initial;
 }
 
 .root {
   display: flex;
 	flex-direction: column;
 	height: 100%;
-	background: #42424f;
+	/* background: #42424f; */
 	padding: 26rpx;
 }
 /* 

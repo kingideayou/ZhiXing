@@ -3,23 +3,23 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 叉腰站立，原地跑步
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 注意想象用脚后跟踢到臀部
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 坚持45秒
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 锻炼心血管机能，活动全身
-  </text>
+  </view>
 
 </view>

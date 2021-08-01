@@ -3,42 +3,42 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1.双手撑地，与肩同宽，手臂伸直
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 前脚掌着地，身体尽量保持平直，臀部不可翘太高，也不能塌腰
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 下降时吸气，推起时呼气
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       4. 初学者可尝试每组完成8-10个，连续做4组，随后逐渐增加每组个数和组数
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     1. 比较全面地锻炼上身肌肉
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     2. 此动作比较接近实战，你懂的
-  </text>
+  </view>
 
-  <text class="title"> 
+  <view class="title"> 
     注意事项 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     1. 背部和双腿伸直，都要离开地面，动作尽量放慢
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     2. 为达到最好效果，在最低点停一秒，且不要利用惯性
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     3. 俯卧撑有很多变式可以自由使用达到不同的锻炼目的
-  </text>
+  </view>
  
 </view>

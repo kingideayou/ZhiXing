@@ -3,23 +3,23 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 平趴在垫子上，伸展手臂和腿
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 将手臂和腿尽量抬高，保持3-5秒，然后放下
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 连续做10次
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 预防和缓解背痛
-  </text>
+  </view>
  
 </view>

@@ -3,26 +3,26 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 平躺，屈膝90度，双脚脚面着地，掌心扶地
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 背部和臀部肌肉用力，抬起臀部使肩膀到膝盖成一条直线，保持10秒
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 放松使臀部再着地，连续完成10次
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     1. 锻炼背部和臀大肌，可以防止和缓解背痛
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     2. 有助于改善臀部外形，使之更加挺翘
-  </text>
+  </view>
  
 </view>

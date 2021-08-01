@@ -3,33 +3,33 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 仰躺于地板，双手放在身体两侧，双腿夹紧，屈膝抬高腿部
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 上半身尽量保持不动，靠腰腹部的力量控制并紧的双腿，扭动腰腹部使脚尽量接触左侧地板
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       3. 再慢慢地将双腿抬起，换边
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       4. 连续完成20次
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 活动腰腹部
-  </text>
+  </view>
 
-  <text class="title"> 
+  <view class="title"> 
     注意事项 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 注意使用腹部力量，而不是臀部
-  </text>
+  </view>
  
 </view>

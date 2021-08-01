@@ -3,27 +3,27 @@
   <!-- <template is="wxParse" data="{{wxParseData:testPage.nodes}}" /> -->
 
   <view class="content-section-{{theme}}">
-    <text class="title"> 动作说明 </text>
-    <text class="content"> 
+    <view class="title"> 动作说明 </view>
+    <view class="content"> 
       1. 在自慰时，快到高潮时尝试运用之前练习的技巧，收缩PC肌，控制射精的时机
-    </text>
-    <text class="content"> 
+    </view>
+    <view class="content"> 
       2. 如果成功了，可以再继续尝试
-    </text>
+    </view>
   </view>
 
-  <text class="title"> 
+  <view class="title"> 
     动作目的 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     这是相当接近性交的训练了，无需勉强自己，刚开始做不到也没有关系，相信多练几次你就能看到进步了。
-  </text>
+  </view>
 
-  <text class="title"> 
+  <view class="title"> 
     注意事项 
-  </text>
-  <text class="content"> 
+  </view>
+  <view class="content"> 
     · 注意，练习前请先排空小便，无需屏住呼吸，注意不要收紧臀部和大腿肌肉。
-  </text>
+  </view>
  
 </view>

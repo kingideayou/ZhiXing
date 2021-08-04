@@ -150,7 +150,7 @@ Page({
                     userInfo: res.userInfo,
                     hasUserInfo: true
                 });
-                _this.onLoad
+                _this.onLoad()
             }
         });
     },

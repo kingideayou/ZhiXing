@@ -9,5 +9,5 @@
 
 
   </text>
-  <image class="head-img" mode="aspectFit" src="../../img/pay.png"></image>
+  <image class="head-img" show-menu-by-longpress="true" mode="aspectFit" src="../../img/pay.png"></image>
 </view>

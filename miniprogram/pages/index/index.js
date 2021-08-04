@@ -31,6 +31,12 @@ Page({
         });
     },
     onLoad: function () {
+
+        wx.showShareMenu({
+            withShareTicket: true,
+            menus:['shareAppMessage','shareTimeline']
+        })
+
         if (wx.getUserProfile) {
             this.setData({
                 canIUseGetUserProfile: true
@@ -134,6 +140,16 @@ Page({
         } catch (e) {
         }
         
+    },
+
+    /**
+     * 用户点击右上角分享
+     */
+    onShareTimeline() {
+        return {
+          title: '「知性」- 💪 凯格尔运动助手',
+          query: 'timeline=1'
+        }
     },
     getUserProfile: function () {
         var _this = this;
